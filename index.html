@@ -40,7 +40,7 @@
             border-top: 1px solid #e2e8f0; /* Separator for academic look */
         }
         .accordion-button.active + .accordion-content {
-            max-height: 1200px; /* Increased max height for long content */
+            /* Max height is set by JS on load/click for smooth transition */
         }
         .accordion-button {
             transition: background-color 0.2s;
@@ -62,7 +62,7 @@
             <section id="abstract" class="mb-10 bg-white p-8 rounded-xl shadow-lg">
                 <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b pb-2">Abstract</h2>
                 <p class="text-gray-800 text-justify">
-                    This longitudinal study charts the trajectory of Indophobic discourse across Western digital media environments from 2015 to 2025. We introduce the <strong>Exploratory Thematic Index (ETI)</strong>, a synthesized metric (0-100) derived from triangulating secondary academic and NGO reports to assess the <em>risk and intensity</em> of hate rhetoric across five key Anglophone and European regions. Findings indicate a statistically significant and persistent upward trend in anti-Indian sentiment, structurally driven by three primary vectors: <strong>economic anxiety conflation</strong> (specifically framing diaspora success as nativist displacement), the active <strong>resurgence of colonial-era racialized tropes</strong>, and <strong>geopolitical conflation</strong> which projects foreign policy tensions onto immigrant communities. This paper presents a detailed methodological critique, asserting the need to transition from this synthesized ETI framework to <strong>primary N-gram and large-scale sentiment analysis</strong> to establish quantifiable, valid data for future research on this critical dimension of global digital xenophobia.
+                    This longitudinal study charts the trajectory of Indophobic discourse across Western digital media environments from 2015 to 2025. We introduce the <strong>Exploratory Thematic Index (ETI)</strong>, a synthesized metric (0-100) derived from triangulating secondary academic and NGO reports to assess the <em>risk and intensity</em> of hate rhetoric across five key Anglophone and European regions. Findings indicate a statistically significant and persistent upward trend in anti-Indian sentiment, structurally driven by three primary vectors: <strong>economic anxiety conflation</strong> (specifically framing diaspora success as nativist displacement), the active <strong>resurgence of colonial-era racialized tropes</strong>, and <strong>geopolitical conflation</strong> which projects foreign policy tensions onto immigrant communities. This paper presents a detailed methodological critique, asserting the need to transition from this synthesized <strong>ETI</strong> framework to <strong>primary N-gram and large-scale sentiment analysis</strong> to establish quantifiable, valid data for future research on this critical dimension of global digital xenophobia.
                 </p>
             </section>
 
@@ -116,7 +116,7 @@
                 </div>
             </section>
             
-            <!-- DEEP DIVES -->
+            <!-- DEEP DIVES - Collapsible and Expanded by Default -->
             <section id="deep-dive" class="mt-10 mb-10">
                 <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center border-b pb-2">Thematic Deep Dives: Analysis of Primary Discourse Drivers</h2>
                 <div class="space-y-4">
@@ -127,7 +127,7 @@
                         </button>
                         <div class="accordion-content">
                             <p class="p-5 pt-4 text-gray-800 text-justify">
-                                The most powerful vector of Indophobic rhetoric is the <strong>framing of Indian immigrants as agents of economic sabotage</strong>. This narrative, central to the worldwide far-right resurgence (CSOH, 2025), is operationalized through terminology such as <strong>"job thieves,"</strong> and highly charged discourse around skilled migration programs like the H-1B visa in the US. In regions like Canada, this economic xenophobia is further specialized, with the international student population being systematically <strong>scapegoated for systemic housing crises</strong> and labor market strains. This pattern leverages perceived economic scarcity to justify calls for legislative action aimed at <strong>demographic displacement</strong> (Policy Options, 2024).
+                                The most powerful vector of Indophobic rhetoric is the <strong>framing of Indian immigrants as agents of economic sabotage</strong>. This narrative, central to the worldwide far-right resurgence (CSOH, 2025), is operationalized through terminology such as "job thieves," and highly charged discourse around skilled migration programs like the H-1B visa in the US. In regions like Canada, this economic xenophobia is further specialized, with the international student population being systematically <strong>scapegoated for systemic housing crises</strong> and labor market strains. This pattern leverages perceived economic scarcity to justify calls for legislative action aimed at <strong>demographic displacement</strong> (Policy Options, 2024).
                             </p>
                         </div>
                     </div>
@@ -138,7 +138,7 @@
                         </button>
                         <div class="accordion-content">
                             <p class="p-5 pt-4 text-gray-800 text-justify">
-                                Modern digital hate frequently draws from a reservoir of <strong>colonial-era prejudices</strong>, tracing back to 19th-century British discourse that intentionally cultivated Indophobia to justify imperial control (Wikipedia, citing Trautmann). These historical sentiments manifest today through <strong>overt racialized slurs</strong> and dehumanizing tropes—specifically portraying Indians as <strong>"smelly, unhygienic, and uncivilized"</strong> (Madras Courier, 2025). Such rhetoric acts as the <strong>cultural scaffolding</strong> for explicit exclusionary narratives. Furthermore, the systematic rise of documented <strong>Hinduphobia</strong> weaponizes religious symbols and misrepresents the faith to justify discrimination and violence against the diaspora (NCRI, 2022).
+                                Modern digital hate frequently draws from a reservoir of <strong>colonial-era prejudices</strong>, tracing back to 19th-century British discourse that intentionally cultivated Indophobia to justify imperial control (Wikipedia, citing Trautmann). These historical sentiments manifest today through <strong>overt racialized slurs</strong> and dehumanizing tropes—specifically portraying Indians as "smelly, unhygienic, and uncivilized" (Madras Courier, 2025). Such rhetoric acts as the <strong>cultural scaffolding</strong> for explicit exclusionary narratives. Furthermore, the systematic rise of documented <strong>Hinduphobia</strong> weaponizes religious symbols and misrepresents the faith to justify discrimination and violence against the diaspora (NCRI, 2022).
                             </p>
                         </div>
                     </div>
@@ -155,25 +155,63 @@
                     </div>
                 </div>
             </section>
+            
+            <!-- STRUCTURAL CONFLUENCE - Collapsible and Expanded by Default -->
+            <section id="structural-confluence" class="mt-10 mb-10 bg-white rounded-xl shadow-lg">
+                <button class="accordion-button w-full flex justify-between items-center text-left p-5 font-semibold text-gray-800 text-2xl focus:outline-none border-b pb-2 active">
+                    <span>Structural Confluence: Theological Friction and Nativist Weaponization</span>
+                    <span class="transform transition-transform duration-300 rotate-180">&#9662;</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="p-5">
+                        <p class="text-gray-800 text-justify">
+                            A deep sociological perspective reveals that the hostility documented by the ETI is fundamentally rooted in a clash between religious and cultural frameworks. Hinduism, historically characterized by philosophical <strong>Pluralism</strong> and <strong>Inclusivism</strong>, structurally fosters <strong>integration</strong>—the maintenance of a distinct religious identity alongside full participation in civic life.
+                        </p>
+                        
+                        <p class="text-gray-800 text-justify">
+                            However, this pluralistic identity interacts poorly with the historical <strong>Exclusivism</strong> and <strong>Covenantal</strong> tradition of the West, which often expects full assimilation for acceptance. The diaspora’s successful retention of difference is thus interpreted by nativist movements as a political 'rejection' of the host culture. This friction provides the ideological justification for the three discourse drivers outlined above.
+                        </p>
+        
+                        <h3 class="text-xl font-medium text-gray-800 mb-3 mt-5">Key Contextual Sub-Drivers</h3>
+                        <ul class="list-disc list-inside text-gray-800 space-y-3 pl-4">
+                            <li>Algorithmic Amplification of Extremism: The cultural friction is intensified by platform architecture. Social media algorithms favor rigid, high-conflict content (<strong>Exclusivism</strong>) over dialogical nuance (<strong>Pluralism</strong>). This systematically amplifies the most extreme voices from both Western nativists and Hindu nationalists, making polarization appear more widespread and validating aggressive rhetoric (driving up the <strong>Severity</strong> ETI criterion).</li>
+                            <li>Model Minority Backlash: The paradoxical success observed in Theme 3 is the sociological <strong>Model Minority Myth (MMM)</strong> in operation. The MMM is used to elevate the Indian diaspora to justify racial exclusion of other minority groups. Indophobic backlash spikes when the diaspora is perceived as benefiting <em>too much</em> from the myth (e.g., tech leadership) or is seen to <em>fail</em> the impossible standard, directly fueling the <strong>Economic Anxiety</strong> theme.</li>
+                            <li>Weaponized Caste and Internal Status: The rhetoric is not monolithic. Indophobic discourse often exploits internal social stratification (class, caste, regional origin) to divide the community and introduce specific slurs. This use of caste-based code words dismisses diaspora success as rooted in internal hierarchy and exploitation rather than merit, thereby reinforcing <strong>Colonial Tropes</strong> and complicating the assimilation narrative.</li>
+                        </ul>
+        
+                        <p class="text-gray-800 text-justify mt-5">
+                            This dynamic is further amplified by the <strong>global rise of conservative political ideologies</strong> in both the West and India. Western nativist movements weaponize the diaspora’s pluralism as a threat to their concept of a singular national identity, while exploiting external political movements to frame the immigrant community as a unified, political 'other.'
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-            <!-- CRITICAL REVIEW AND LIMITATIONS - Stronger, More Assertive Language -->
-            <section id="limitations" class="mt-10 mb-10 bg-white p-8 rounded-xl shadow-lg">
-                <h2 class="text-2xl font-semibold text-gray-800 mb-4 border-b pb-2">Critical Review: Methodological Deficiencies and Mandatory Future Directives</h2>
-                <p class="text-gray-800">
-                    The utility of this report is bounded by its structural dependence on the Exploratory Thematic Index (ETI). While the ETI successfully maps qualitative thematic trends, its constraints fundamentally compromise its utility as a validated academic measure:
-                </p>
-                
-                <h3 class="text-xl font-medium text-gray-800 mb-3 mt-5">Inherent Methodological Constraints of the ETI</h3>
-                <ul class="list-disc list-inside text-gray-800 space-y-3 pl-4">
-                    <li><strong>Quantifiable Validity Crisis:</strong> The ETI lacks a standardized, externally validated formula. Its reliance on subjective weighting (<strong>w</strong><sub>n</sub>) of secondary data renders its values as exploratory assertions, severely compromising its statistical <strong>validity and inter-rater reliability (IRR)</strong>. This must be addressed before further application.</li>
-                    <li><strong>Absence of Primary Frequency Data:</strong> The lack of direct <strong>N-Gram Frequency Analysis</strong> (actual counts of derogatory language) means conclusions regarding the <strong>volume</strong> of Indophobic discourse are extrapolations based on external report summaries, not quantifiable evidence.</li>
-                    <li><strong>Confounding Heterogeneity:</strong> The aggregated Western context ignores crucial <strong>internal political and economic heterogeneity</strong>. The drivers of anti-Indian discourse in Canada (housing/student visas) are mechanistically different from those in the UK (post-Brexit nationalism), meaning the aggregated ETI score risks masking critical regional divergences.</li>
-                </ul>
 
-                <h3 class="text-xl font-medium text-gray-800 mb-3 mt-6">Mandatory Directions for Future Research</h3>
-                <p class="text-gray-800 text-justify">
-                    To transition this analysis from exploratory synthesis to rigorous social science, future efforts <strong>must</strong> prioritize the acquisition of primary data and the development of a validated instrument: (1) Execute large-scale <strong>N-gram and Sentiment Analysis</strong> on platforms like X, Reddit, and Telegram; (2) Conduct <strong>Comparative Data Analysis</strong> against anti-Asian sentiment targeting other large diaspora groups to isolate Indophobic specificity; and (3) Develop and publish a <strong>validated, open-source ETI 2.0 protocol</strong> that includes quantifiable inter-rater reliability checks.
-                </p>
+            <!-- CRITICAL REVIEW AND LIMITATIONS - Collapsible and Expanded by Default -->
+            <section id="limitations" class="mt-10 mb-10 bg-white rounded-xl shadow-lg">
+                <button class="accordion-button w-full flex justify-between items-center text-left p-5 font-semibold text-gray-800 text-2xl focus:outline-none border-b pb-2 active">
+                    <span>Critical Review: Methodological Deficiencies and Mandatory Future Directives</span>
+                    <span class="transform transition-transform duration-300 rotate-180">&#9662;</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="p-5">
+                        <p class="text-gray-800">
+                            The utility of this report is bounded by its structural dependence on the <strong>Exploratory Thematic Index (ETI)</strong>. While the ETI successfully maps qualitative thematic trends, its constraints fundamentally compromise its utility as a validated academic measure:
+                        </p>
+                        
+                        <h3 class="text-xl font-medium text-gray-800 mb-3 mt-5">Inherent Methodological Constraints of the ETI</h3>
+                        <ul class="list-disc list-inside text-gray-800 space-y-3 pl-4">
+                            <li><strong>Quantifiable Validity Crisis:</strong> The ETI lacks a standardized, externally validated formula. Its reliance on subjective weighting (<strong>w</strong><sub>n</sub>) of secondary data renders its values as exploratory assertions, severely compromising its statistical <strong>validity and inter-rater reliability (IRR)</strong>. This must be addressed before further application.</li>
+                            <li><strong>Absence of Primary Frequency Data:</strong> The lack of direct <strong>N-Gram Frequency Analysis</strong> (actual counts of derogatory language) means conclusions regarding the <strong>volume</strong> of Indophobic discourse are extrapolations based on external report summaries, not quantifiable evidence.</li>
+                            <li><strong>Confounding Heterogeneity:</strong> The aggregated Western context ignores crucial <strong>internal political and economic heterogeneity</strong>. The drivers of anti-Indian discourse in Canada (housing/student visas) are mechanistically different from those in the UK (post-Brexit nationalism), meaning the aggregated ETI score risks masking critical regional divergences.</li>
+                        </ul>
+        
+                        <h3 class="text-xl font-medium text-gray-800 mb-3 mt-6">Mandatory Directions for Future Research</h3>
+                        <p class="text-gray-800 text-justify">
+                            To transition this analysis from exploratory synthesis to rigorous social science, future efforts <strong>must</strong> prioritize the acquisition of primary data and the development of a validated instrument: (1) Execute large-scale <strong>N-gram and Sentiment Analysis</strong> on platforms like X, Reddit, and Telegram; (2) Conduct <strong>Comparative Data Analysis</strong> against anti-Asian sentiment targeting other large diaspora groups to isolate Indophobic specificity; and (3) Develop and publish a <strong>validated, open-source ETI 2.0 protocol</strong> that includes quantifiable inter-rater reliability checks.
+                        </p>
+                    </div>
+                </div>
             </section>
 
             <!-- CITATIONS -->
@@ -292,7 +330,7 @@
                         }
                     },
                     onHover: (event, chartElement) => {
-                        const analysisContent = document.getElementById('analysis-content');
+                        const analysisContent = document.getElementById('analysis-panel');
                         if (chartElement.length > 0) {
                             event.native.target.style.cursor = 'pointer';
                             const yearIndex = chartElement[0].index;
@@ -336,25 +374,47 @@
             });
 
             const accordionButtons = document.querySelectorAll('.accordion-button');
-            accordionButtons.forEach(button => {
+            
+            // Function to handle expanding content
+            const expandContent = (button) => {
                 const content = button.nextElementSibling;
                 const icon = button.querySelector('span:last-child');
-                
-                const expandContent = () => {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                    button.classList.add('active');
-                    icon.style.transform = 'rotate(180deg)';
-                };
+                // Calculate height dynamically to ensure smooth transition
+                content.style.maxHeight = content.scrollHeight + "px";
+                button.classList.add('active');
+                icon.style.transform = 'rotate(180deg)';
+            };
 
-                expandContent(); 
+            // Function to handle collapsing content
+            const collapseContent = (button) => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('span:last-child');
+                content.style.maxHeight = null;
+                button.classList.remove('active');
+                icon.style.transform = 'rotate(0deg)';
+            };
+            
+            // Initialize: Set all accordion contents to expanded (active) on load
+            accordionButtons.forEach(button => {
+                expandContent(button);
+            });
 
+            // Add click listener for toggling
+            accordionButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     if (button.classList.contains('active')) {
-                        content.style.maxHeight = null;
-                        button.classList.remove('active');
-                        icon.style.transform = 'rotate(0deg)';
+                        collapseContent(button);
                     } else {
-                        expandContent();
+                        expandContent(button);
+                    }
+                });
+            });
+
+            // Re-calculate heights after a short delay for elements that might rely on rendering
+            window.addEventListener('load', () => {
+                accordionButtons.forEach(button => {
+                    if (button.classList.contains('active')) {
+                        expandContent(button);
                     }
                 });
             });
